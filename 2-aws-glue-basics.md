@@ -1,0 +1,18 @@
+### AWS Glue Basics
+
+- AWS Glue Crawler scans data in S3 and creates the schema, this created schema is called the data catalog.
+
+- The Glue crawler can be scheduled to run periodically to look for any changes to the data.
+
+- As it runs, it populates the data catalog. The Glue Catalog only stores table definition. Which is things like: Schema, Column Names, Data type... etc. -- The catalog is true Metadata, data about the data.
+
+### The reason we are using Glue to query and then store data in our data catalog is so that, later, we can use tools like Redshift, Athena or EMR to query our unstructured data, as if it were structured data.
+
+- Note: We are never moving the data, it is still in S3... we are just using Glue as a bridge or "Glue" between the unstructured S3 data and our tools like Redshift, Athena, EMR and Quicksight.
+
+- One the data is cataloged it is - Immediately - available for analysis.
+
+### AWS Glue is not magic
+- AWS Glue is awesome, but it's not magic. The Glue Crawler will extract partitions based on how your S3 data is organized. - How you structure your unstructured data. -  So, think upfront about how you are going to be querying your DataLake in S3. 
+
+
