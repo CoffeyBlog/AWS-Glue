@@ -63,8 +63,12 @@
 
 - RDD's are immutable, lazily evaluated and cacheable
 
-- There are 2 types of Spark operations: 
+- There are 2 types of Spark operations:
 - Transformations
 - Actions
 
--
+-Transformations are basically a recipe to follow
+
+-Actions perform what the recipe / transformation says
+
+- Spark displays data in a dataframe syntax

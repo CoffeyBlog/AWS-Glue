@@ -12,6 +12,16 @@
 
 - It can also define data located in RDS,  Redshift and most SQL databases.
 
+### AWS Glue Components
+
+- 1. Serverless ETL engine based on Apache Spark - that comes with an interactive UI in which you can auto generate ETL-code
+
+- 2. AWS Glue Data Catalog - a centralized metadata store that is fully Apache Hive compatible.
+
+- 3. AWS Crawlers that automatically scan S3 buckets, databases, Redshift and more to load the schema and data into the metadata catalog.
+
+- 4. Workflow Management tools to create complex workflows, crawlers triggers and jobs   
+
 ### The purpose of AWS Glue is to extract structure from unstructured data
 
 - Providing you this structure give you the ability to query the data using SQL or SQLite tools.
